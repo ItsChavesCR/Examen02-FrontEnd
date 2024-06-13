@@ -1,0 +1,91 @@
+.evento {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  .evento thead {
+    background-color: #264B49;
+    color: white;
+  }
+  
+  .evento th, .evento td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  .evento th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+  
+  .evento tbody tr {
+    background-color: #f8f9fa;
+  }
+  
+  .evento tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+  }
+  
+  .evento tbody tr:hover {
+    background-color: #e2e6ea;
+    transition: background-color 0.3s ease;
+  }
+  
+  .evento td {
+    font-size: 0.9em;
+    border-top: 1px solid #dee2e6;
+  }
+  
+
+  .evento th:nth-child(1),
+  .evento td:nth-child(1) {
+    width: 10%;
+    text-align: center;
+  }
+  
+  .evento th:nth-child(2),
+  .evento td:nth-child(2) {
+    width: 30%;
+  }
+  
+  .evento th:nth-child(3),
+  .evento td:nth-child(3) {
+    width: 20%;
+  }
+  
+  .evento th:nth-child(4),
+  .evento td:nth-child(4) {
+    width: 40%;
+  }
+  
+
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #264B49;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  @media (max-width: 600px) {
+    .evento {
+      font-size: 0.8em;
+    }
+    
+    .evento th, .evento td {
+      padding: 8px 10px;
+    }
+  }

@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <>
     <AddEventos/>
+    <br/>
     <ViewEventos/>
     </>
   )

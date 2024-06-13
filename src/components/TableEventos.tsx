@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { EventoType } from '../types/EventoType';
 import { GetAllEventos } from '../services/Evento';
-
+import '../styles/TableEventos.css'
 
 
 const EventosRealizados = () => {
@@ -39,7 +39,7 @@ useEffect(() => {
 
     <div>
       <h2>Eventos</h2>
-      <table className="cita-evento">
+      <table className="evento">
         <thead>
           <tr>
             <th>ID</th>

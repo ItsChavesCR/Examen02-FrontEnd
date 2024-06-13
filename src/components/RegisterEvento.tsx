@@ -7,6 +7,7 @@ import { EventoType } from "../types/EventoType";
 import { AddEvento } from "../services/Evento";
 import { SalaType } from "../types/SalaType";
 import { useNavigate } from "react-router-dom";
+import '../styles/RegisterEvento.css'
 
 const FormularioReservaEvento = () => {
 
@@ -79,7 +80,7 @@ const FormularioReservaEvento = () => {
           <input {...register('name')
           }></input>
           <br/>
-                              <label
+              <label
                                   htmlFor='TipoEventoId'>
                                   <strong>Tipo Evento</strong>
                               </label>

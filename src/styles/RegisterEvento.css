@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .Container_form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: Arial, sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .reserv-cita{
+    color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  select {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .Button {
+    width: 30%;
+    background-color: #264b49;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    justify-content: end;
+  }
+  
+  .button-back:before { 
+    font-size: 2.5em;
+    margin-right: 0.2em;
+  }
+  
+  .arrowback{
+    width: 90%;
+    height: 125%;
+    justify-content: center;
+  
+  }
+  
+  .container-button-back{
+  
+  width: 5%;
+  height: 5%;
+  }
+  
+  .button:hover {
+    background-color: #527454;
+    padding-top: 5%;
+  }
+  
+  
+  .confirm-input {
+    text-align: center;
+    margin-top: 20px;
+  }

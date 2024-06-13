@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import '../styles/AddEventos.css'
 const AddEventos = () => {
               return (
                 <div className='container-button'>
