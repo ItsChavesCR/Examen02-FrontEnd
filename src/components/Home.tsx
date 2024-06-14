@@ -1,4 +1,5 @@
 import AddEventos from "./AddEventos"
+import SearchEventos from "./SearchEventos"
 import ViewEventos from "./ViewEventos"
 
 const Home = () => {
@@ -7,6 +8,8 @@ const Home = () => {
     <AddEventos/>
     <br/>
     <ViewEventos/>
+    <br/>
+    <SearchEventos/>
     </>
   )
 }
