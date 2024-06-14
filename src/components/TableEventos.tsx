@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { EventoType } from '../types/EventoType';
 import { GetAllEventos } from '../services/Evento';
 import '../styles/TableEventos.css'
-
+import SearchEventos from './SearchEventos';
 
 const EventosRealizados = () => {
 const [evento, setEvento] = useState<EventoType[]>([]);
@@ -31,6 +31,7 @@ useEffect(() => {
 
   return (
 <>
+<SearchEventos/>
     <div className='container-button-back'>
     <button className='button-back' type='submit' onClick={handleCancel} aria-label="Volver"> 
     <img className='arrowback' src="/src/assets/ArrowBack.svg" alt="" />
@@ -52,12 +53,14 @@ useEffect(() => {
         </thead>
         <tbody>
         {evento.map((evento) => (
-            <option key={evento.id} >
-            {evento.id}
-            {evento.name} 
-            {evento.tipoEventoId} 
-            {evento.salaId}</option>
+            <tr key={evento.id} >
+             <td>{evento.id}</td>
+                <td>{evento.name}</td>
+                <td>{evento.tipoEventoId}</td>
+                <td>{evento.salaId}</td>
+            </tr>
           ))}
+        
         </tbody>
       </table>
     </div>

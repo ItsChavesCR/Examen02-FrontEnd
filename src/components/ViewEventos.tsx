@@ -6,6 +6,7 @@ const ViewEventos = () => {
     <div className='container-button'>
     <Link className='view-evento' to={'/vieweventos'}>Ver Eventos</Link>
   </div>
+  
   )
 }
 

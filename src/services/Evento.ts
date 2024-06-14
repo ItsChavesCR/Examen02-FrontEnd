@@ -20,3 +20,36 @@ export const GetAllEventos = async (): Promise<EventoType[]> => {
               }
               return response.json();
             };
+
+
+
+            export async function getAllEventosSearch(searchTerm: string) {
+              let response;
+              try {
+                  const url = new URL('http://localhost:5081/api/Eventos');
+                  url.searchParams.append('sortBy', 'title');
+                  url.searchParams.append('order', 'desc');
+          
+                  response = await fetch(url, {
+                      method: 'GET',
+                      headers: { 'Content-Type': 'application/json' },
+                  });
+                  if (!response.ok) throw new Error('Error al obtener eventos');
+              } catch (error) {
+                  console.error('Error al hacer fetching: ', error);
+                  throw error;
+              } finally {
+                  console.log('Fetching de eventos finalizado');
+              }
+          
+              try {
+                  const responseData: EventoType[] = await response.json();
+                  const filteredEventos = responseData.filter((eventos: EventoType) =>
+                      eventos.Name.toLowerCase().includes(searchTerm.toLowerCase())
+                  );
+                  return filteredEventos;
+              } catch (error) {
+                  console.error(error);
+                  throw error;
+              }
+          }
